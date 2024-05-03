@@ -15,5 +15,5 @@ int main() {
 	cout << current.getDay() << endl;
 	cout << current.getMonth() << endl;
 	cout << current.getYear() << endl;
-	cout << submittime.date_comparision(current);
+	cout << submittime.dateComparision(current);
 }

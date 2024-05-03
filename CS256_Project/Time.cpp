@@ -37,7 +37,7 @@ void Time::getCurrentTime() {
 }
 
 
-bool Time::date_comparision(Time dueDate_) {
+bool Time::dateComparision(Time dueDate_) {
 	if (this->year > dueDate_.getYear()) {
 		return false;
 	}

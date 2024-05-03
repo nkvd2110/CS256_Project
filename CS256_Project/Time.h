@@ -25,7 +25,7 @@ public:
 	void getCurrentTime();
 
 
-	bool date_comparision(Time);
+	bool dateComparision(Time);
 };
 //
 // Project *project = findProjectID(ID);
