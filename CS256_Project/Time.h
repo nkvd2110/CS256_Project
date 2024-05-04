@@ -24,7 +24,6 @@ public:
 
 	void getCurrentTime();
 
-
 	bool dateComparision(Time);
 };
 //

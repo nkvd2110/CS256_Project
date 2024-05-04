@@ -1,4 +1,5 @@
 #include "Time.h"
+
 #pragma once
 /**
  * @brief This class represents the submission status (result) of a project for a group.
