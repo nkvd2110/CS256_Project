@@ -14,10 +14,25 @@ void Group::setGroupID(int groupID) { this->groupID = groupID; }
 
 int Group::getNumberOfStudent() const { return studentList.size(); }
 
-void Group::addNewStudent(Student* student) {}
+void Group::addNewStudent(Student* student) {
+	if (student->getGroupStatus() == true) {
+		std::cout << "This student already been in other group";
+		return;
+	}
+	else {
+		student->setGroupID(groupID);
+		student->setGroupStatus(true);
+		studentList.push_back(student);
+	}
 
-void Group::saveGroupInfor() {}
+}
 
-void Group::loadGroupInfor() {}
+//void Group::saveGroupInfor(){}
+//
+//void Group::loadGroupInfor(){}
+//
+//void Group::displayGroupInfor(){}
 
-void Group::displayGroupInfor() {}
+//1
+//Nguyen van A
+//Nguyen nguyen B
