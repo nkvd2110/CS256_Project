@@ -24,4 +24,6 @@ Time Project::getDueDate() const { return dueDate; }
 
 void Project::setDueDate(Time dueDate) { this->dueDate = dueDate; }
 
-std::string Project::toString() {}
+std::string Project::toString() {
+	return 0;
+}

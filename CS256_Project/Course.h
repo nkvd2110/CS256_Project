@@ -3,16 +3,14 @@
 #include "Group.H"
 #include "Submission.h"
 #include "Project.h"
+#include "Time.h"
+
 #pragma once
 
 class Course
 {
 private:
 	std::string courseID;
-
-	int number_of_projects;
-
-	int number_of_groups;
 
 	std::vector<Group*> groupList;
 
@@ -39,7 +37,7 @@ public:
 	*
 	* @param studentName - the name of the student
 	*/
-	void addNewStudent(std::string studentName);
+	Student* addNewStudent(std::string studentName);
 
 	/**
 	* @brief This function use for adding a new group into groupList
@@ -48,7 +46,7 @@ public:
 	* @param groupID The ID of the group, has to be unique
 	*
 	*/
-	void addNewGroup(int groupID);
+	Group* addNewGroup(int groupID);
 
 	/**
 	* @brief This funtion use for adding a new student into a group
@@ -87,7 +85,7 @@ public:
 	* @param projectID The ID of project
 	* @param submitDate the submitted date
 	*/
-	void submit(int groupID, int projectID, int submitDate);
+	void submit(int groupID, int projectID, Time submitDate);
 
 	/**
 	* @brief This function use for finding a group by its ID
