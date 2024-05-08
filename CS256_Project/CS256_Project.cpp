@@ -19,39 +19,7 @@ Time returnTime()
 	return time;
 }
 
-//submitted = returnTime();
 int main() {
-	/*cout << "Hello World" << endl;
-	
-
-	Time submittime = returnTime();
-	Time dueDate(28, 4, 2024);
-	Time current;
-	current.getCurrentTime();
-	cout << current.getDay() << endl;
-	cout << current.getMonth() << endl;
-	cout << current.getYear() << endl;
-	cout << submittime.dateComparision(current);*/
-
-	Course newCourse("CS256");
-	Group* group = newCourse.addNewGroup(auto_increase_group);
-	cout << newCourse.getNumberOfGroups() << endl;
-	
-	Student* student1 = newCourse.addNewStudent("Nguyen Van A");
-
-	newCourse.addStudentToAGroup(student1, group->getGroupID());
-
-	cout << student1->getGroupStatus() << endl;
-	cout << student1->getGroupID() << endl;
-
-	group->setGroupID(8);
-	if (newCourse.findGroupByID(8) == nullptr) {
-		cout << "fail";
-	}
-	else {
-		cout << "ok";
-	}
-	
-
-
 }
+
+// This is a test line
